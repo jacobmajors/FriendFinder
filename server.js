@@ -14,7 +14,7 @@ var express = require("express");
 var app = express();
 
 // Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 // express.json and express.urlEncoded make it easy for our server to interpret data sent to it.
 // The code below is pretty standard.
