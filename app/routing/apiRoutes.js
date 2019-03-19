@@ -22,12 +22,12 @@ module.exports = function (app) {
         var bestMatch = {
             name: "",
             photo: "",
-            friendDifference: Infinity
+            friendDifference: 100000
         };
 
-        // Takes user data object from survey
+        // Takes userData object from survey
         var userData = req.body;
-        // User scores combined with body
+        // Scores array from survey
         var userScores = userData.scores;
 
         // Variable to hold difference in scores
@@ -56,7 +56,7 @@ module.exports = function (app) {
             };
         };
 
-        // Add new user to friend database
+        // Add new user's input to friends database
         friends.push(userData);
 
         // Send response
